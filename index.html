@@ -255,23 +255,14 @@
     </div>
 
     <!-- 상담 채널톡 및 스크립트 영역 -->
-    <script>
-        // 실시간 상담 버튼 클릭 시 실행될 함수
-        function openChat() {
-            // 여기에 채널톡이나 카카오톡 상담 API를 연결하세요.
-            // 예: ChannelIO('show');
-            alert('실시간 상담 서비스가 준비 중입니다. 채널톡 코드를 스크립트 영역에 삽입해 주세요.');
-        }
+ <script>
+  (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
 
-        /* 아래 영역에 채널톡(Channel.io) 또는 다른 실시간 상담 솔루션 코드를 붙여넣으세요.
-           --------------------------------------------------------------------------
-        */
-        
-        // (채널톡 설치 스크립트 예시 위치)
-        
-        /* --------------------------------------------------------------------------
-        */
-    </script>
+  ChannelIO('boot', {
+    "pluginKey": "32c4e68f-9e5a-413c-87ae-16d118ac2c20"
+  });
+</script>
 
 </body>
 </html>
+
