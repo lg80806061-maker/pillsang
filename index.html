@@ -46,7 +46,8 @@
             <nav class="hidden md:flex space-x-8 font-semibold text-gray-600">
                 <a href="#benefits" class="hover:text-blue-600">혜택안내</a>
                 <a href="#pricing" class="hover:text-blue-600">요금제</a>
-                <a href="#reviews" class="hover:text-blue-600">이용후기</a>
+                <!-- 이용후기에서 실시간 상담으로 변경 -->
+                <a href="javascript:void(0);" onclick="openChat();" class="hover:text-blue-600">실시간 상담</a>
             </nav>
             <a href="#apply" class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition">상담신청</a>
         </div>
@@ -250,8 +251,27 @@
             <div class="text-xs text-blue-600 font-bold">인터넷 가입 문의</div>
             <div class="text-lg font-bold">1588-0000</div>
         </div>
-        <a href="#apply" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-bold">간편상담</a>
+        <a href="javascript:void(0);" onclick="openChat();" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-bold">실시간 상담</a>
     </div>
+
+    <!-- 상담 채널톡 및 스크립트 영역 -->
+    <script>
+        // 실시간 상담 버튼 클릭 시 실행될 함수
+        function openChat() {
+            // 여기에 채널톡이나 카카오톡 상담 API를 연결하세요.
+            // 예: ChannelIO('show');
+            alert('실시간 상담 서비스가 준비 중입니다. 채널톡 코드를 스크립트 영역에 삽입해 주세요.');
+        }
+
+        /* 아래 영역에 채널톡(Channel.io) 또는 다른 실시간 상담 솔루션 코드를 붙여넣으세요.
+           --------------------------------------------------------------------------
+        */
+        
+        // (채널톡 설치 스크립트 예시 위치)
+        
+        /* --------------------------------------------------------------------------
+        */
+    </script>
 
 </body>
 </html>
